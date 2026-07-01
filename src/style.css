@@ -2748,6 +2748,30 @@ input[type=range]::-webkit-slider-thumb {
     min-width: 85vw !important;
     padding: 20px !important;
     border-radius: 16px;
+    scroll-snap-align: center !important;
+  }
+
+  /* ALL Card Grids across the site convert to horizontal side-wise swiping carousels on phone instead of stacking downwards! */
+  .features-grid, .case-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 16px !important;
+    padding-bottom: 20px !important;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+  }
+  .features-grid::-webkit-scrollbar, .case-grid::-webkit-scrollbar {
+    height: 4px;
+  }
+  .features-grid > *, .case-grid > * {
+    flex: 0 0 84vw !important;
+    min-width: 84vw !important;
+    max-width: 84vw !important;
+    scroll-snap-align: center !important;
+    margin: 0 !important;
   }
 
   /* Deploy Anywhere Hub & Cards on Phone */

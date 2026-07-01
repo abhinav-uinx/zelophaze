@@ -658,8 +658,7 @@
           <div class="card-icon" style="margin: 0 auto 18px;"><i data-lucide="eye"></i></div>
           <h3>Stop Scrapers & Credential Stuffing Without CAPTCHAs</h3>
           <p>Traditional CAPTCHAs disrupt legitimate user workflows and lower conversion rates. Zelophaze utilizes transparent cryptographic challenges, TLS client fingerprinting, and behavioral navigation heuristics to neutralize automated bots silently.</p>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div class="features-grid" style="gap: 20px;">
           <div style="background: #f8fafc; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid var(--border-color);">
             <h4 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 6px;">100%</h4>
             <p style="font-size: 0.85rem; color: var(--text-muted);">Automated Bot & Scraper Mitigation</p>
@@ -1062,10 +1061,53 @@
           const nextBtn = document.getElementById('indNextBtn');
           if (track && prevBtn && nextBtn) {
             prevBtn.addEventListener('click', () => {
-              track.scrollBy({ left: -384, behavior: 'smooth' });
+              track.scrollBy({ left: -360, behavior: 'smooth' });
             });
             nextBtn.addEventListener('click', () => {
-              track.scrollBy({ left: 384, behavior: 'smooth' });
+              track.scrollBy({ left: 360, behavior: 'smooth' });
+            });
+          }
+
+          // Intelligent time-based side-wise autoscroll engine for phone & desktop
+          const setupAutoScroll = (container, intervalMs = 3800) => {
+            if (!container) return;
+            let timer;
+            let isPaused = false;
+
+            const startTimer = () => {
+              clearInterval(timer);
+              timer = setInterval(() => {
+                if (isPaused) return;
+                const maxScroll = container.scrollWidth - container.clientWidth;
+                if (maxScroll <= 10) return;
+                if (container.scrollLeft >= maxScroll - 25) {
+                  container.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                  const firstCard = container.firstElementChild;
+                  const step = firstCard ? firstCard.clientWidth + 16 : 320;
+                  container.scrollBy({ left: step, behavior: 'smooth' });
+                }
+              }, intervalMs);
+            };
+
+            const pauseForAWhile = () => {
+              isPaused = true;
+              setTimeout(() => { isPaused = false; }, 8000);
+            };
+
+            container.addEventListener('touchstart', pauseForAWhile, { passive: true });
+            container.addEventListener('mouseenter', () => { isPaused = true; });
+            container.addEventListener('mouseleave', () => { isPaused = false; });
+
+            startTimer();
+          };
+
+          setupAutoScroll(track, 4000);
+
+          // On mobile phones, auto-scroll feature grids too so cards move smoothly side-wise!
+          if (window.innerWidth <= 768) {
+            document.querySelectorAll('.features-grid, .case-grid').forEach((grid, idx) => {
+              setupAutoScroll(grid, 3500 + (idx * 600));
             });
           }
         });
