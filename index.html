@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zelophaze | Enterprise AI Security & WAAP Platform</title>
+  <meta name="description" content="Zelophaze delivers enterprise-grade autonomous WAAP, zero-day API security, bot mitigation, and Layer-7 DDoS protection backed by 24×7 SOC analysts." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Background Interactive Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="logo-icon">
+          <!-- Sleek Professional Corporate Cyber Shield Logo -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 8 L86 22 V50 C86 74 50 92 50 92 C50 92 14 74 14 50 V22 L50 8Z" stroke="#2563eb" stroke-width="6" fill="#eff6ff" />
+            <path d="M34 36 H66 L38 64 H66" stroke="#0284c7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="66" cy="36" r="3.5" fill="#2563eb" />
+            <circle cx="38" cy="64" r="3.5" fill="#0284c7" />
+          </svg>
+        </div>
+        <div>
+          <span class="brand-name">Zelophaze</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="#platform" class="nav-link">Platform <i data-lucide="chevron-down" style="width: 14px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="#platform-waap" class="dropdown-item"><i data-lucide="shield"></i> WAAP Platform</a>
+            <a href="#platform-api" class="dropdown-item"><i data-lucide="cpu"></i> API Security</a>
+            <a href="#platform-waf" class="dropdown-item"><i data-lucide="lock"></i> Hybrid & Cloud WAF</a>
+            <a href="#platform-bot" class="dropdown-item"><i data-lucide="eye"></i> AI Bot Mitigation</a>
+            <a href="#platform-ddos" class="dropdown-item"><i data-lucide="activity"></i> Layer-7 DDoS Defense</a>
+            <a href="#platform-cdn" class="dropdown-item"><i data-lucide="globe"></i> Global Edge CDN</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#solutions" class="nav-link">Solutions <i data-lucide="chevron-down" style="width: 14px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="#solutions" class="dropdown-item"><i data-lucide="zap"></i> WAF as a Service</a>
+            <a href="#solutions" class="dropdown-item"><i data-lucide="layers"></i> MSP & MSSP Program</a>
+            <a href="#solutions" class="dropdown-item"><i data-lucide="activity"></i> Healthcare & Pharma</a>
+            <a href="#solutions" class="dropdown-item"><i data-lucide="database"></i> BFSI & Banking</a>
+            <a href="#solutions" class="dropdown-item"><i data-lucide="cloud"></i> Multi-Cloud Security</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#roi" class="nav-link">Pricing & ROI</a></li>
+        <li class="nav-item"><a href="#case-studies" class="nav-link">Case Studies</a></li>
+      </ul>
+
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <a href="login/index.html" class="btn btn-outline" style="text-decoration: none; display: inline-flex; align-items: center;">Login</a>
+        <button class="btn btn-primary open-demo-modal">Request Demo <i data-lucide="arrow-up-right"></i></button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-content-single" style="max-width: 1240px; margin: 0 auto; text-align: center;">
+      <h1 class="hero-title" style="margin-bottom: 8px;">
+        Enterprise Web & API <span class="text-gradient">Protection</span>
+      </h1>
+      <div style="margin: 6px auto 30px; text-align: center;">
+        <span id="changing-word" class="hero-blue-words">Zero-Day API Defense</span>
+      </div>
+      <p class="hero-desc" style="margin: 0 auto 34px; max-width: 780px; line-height: 1.6;">
+        Architected for modern enterprise ecosystems, Zelophaze delivers autonomous, multi-layered Web & API Protection (WAAP). Harnessing adaptive reinforcement intelligence, our consolidated fabric continuously neutralizes zero-day vulnerabilities, sophisticated bot networks, and volumetric Layer-7 DDoS campaigns across hybrid cloud and Kubernetes environments—achieving complete security posture enforcement in under 15 minutes.
+      </p>
+
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+        <button class="btn btn-primary open-demo-modal" style="padding: 14px 36px; font-size: 1.05rem;">
+          Start Enterprise Trial <i data-lucide="arrow-up-right"></i>
+        </button>
+      </div>
+
+      <!-- Individual Curved Pill Badges Row -->
+      <div class="hero-pill-bar">
+        <a href="/pages/unified-protection.html" class="hero-pill" style="text-decoration: none;">
+          <i data-lucide="shield-check"></i>
+          <span>Unified Web, API, Bot & DDoS Protection</span>
+        </a>
+        <a href="/pages/kubernetes-waap.html" class="hero-pill" style="text-decoration: none;">
+          <i data-lucide="box"></i>
+          <span>Kubernetes-native WAAP</span>
+        </a>
+        <a href="/pages/aiml-detection.html" class="hero-pill" style="text-decoration: none;">
+          <i data-lucide="activity"></i>
+          <span>AI/ML - Anomaly Detection</span>
+        </a>
+        <a href="/pages/hybrid-cloud.html" class="hero-pill" style="text-decoration: none;">
+          <i data-lucide="cloud"></i>
+          <span>Inline, Hybrid & Multi-Cloud</span>
+        </a>
+        <a href="/pages/rapid-deployment.html" class="hero-pill" style="text-decoration: none;">
+          <i data-lucide="sliders"></i>
+          <span>Deploy in 15 minutes</span>
+        </a>
+      </div>
+
+      <div class="hero-stats" style="max-width: 820px; margin: 40px auto 0;">
+        <div class="stat-item">
+          <h3>&lt; 0.4 ms</h3>
+          <p>Sub-Millisecond Inspection Latency</p>
+        </div>
+        <div class="stat-item">
+          <h3>99.999%</h3>
+          <p>Global Anycast Uptime SLA</p>
+        </div>
+        <div class="stat-item">
+          <h3>24×7 SOC</h3>
+          <p>Managed Expert Security Analyst Backup</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stacked Scrolling Security Engine Section -->
+  <section id="platform" class="stack-engine-section">
+    <div class="stack-showcase-frame">
+      <div class="stack-engine-header">
+        <!-- Sticky Top Navigation Tabs -->
+        <div class="stack-tab-bar">
+          <button class="stack-tab-btn active" data-target="stack-card-0">Traffic Analysis</button>
+          <button class="stack-tab-btn" data-target="stack-card-1">Threat Detection</button>
+          <button class="stack-tab-btn" data-target="stack-card-2">Intelligent Response</button>
+          <button class="stack-tab-btn" data-target="stack-card-3">Human in the Loop</button>
+          <button class="stack-tab-btn" data-target="stack-card-4">Continuous Learning</button>
+        </div>
+      </div>
+
+      <!-- Single-Frame Stack Cards Container -->
+      <div class="stack-cards-container">
+        <!-- Card 1: Traffic Analysis -->
+        <div class="stack-card active" id="stack-card-0">
+        <div class="stack-card-content">
+          <div class="stack-card-text">
+            <h3>Traffic Analysis</h3>
+            <p>Continuous real-time inspection of inbound and outbound HTTP/s, API, and WebSocket requests across multi-cloud and edge nodes without introducing latency.</p>
+          </div>
+          <div class="stack-card-visual">
+            <div class="traffic-diagram">
+              <!-- Left Stream -->
+              <div class="tf-stream tf-left">
+                <span class="tf-label">HTTP/S Request</span>
+                <div class="tf-arrow">
+                  <i data-lucide="arrow-right"></i>
+                </div>
+              </div>
+
+              <!-- Surrounding Nodes -->
+              <div class="tf-node node-tl">
+                <div class="tf-icon"><i data-lucide="settings"></i></div>
+                <span>Headers</span>
+              </div>
+              <div class="tf-node node-bl">
+                <div class="tf-icon"><i data-lucide="activity"></i></div>
+                <span>Behavior Patterns</span>
+              </div>
+              <div class="tf-node node-tr">
+                <div class="tf-icon"><i data-lucide="database"></i></div>
+                <span>Payloads</span>
+              </div>
+
+              <!-- Center AI Inspect Window -->
+              <div class="tf-center-window">
+                <div class="tf-win-dots">
+                  <span style="background:#f87171"></span>
+                  <span style="background:#fbbf24"></span>
+                  <span style="background:#34d399"></span>
+                </div>
+                <div class="tf-win-content">
+                  <div class="tf-ai-pill">AI</div>
+                  <div class="tf-ai-spark"><i data-lucide="sparkles"></i></div>
+                </div>
+                <div class="tf-win-title">AI Inspect Engine</div>
+              </div>
+
+              <!-- Right Stream Outputs -->
+              <div class="tf-stream tf-right">
+                <div class="tf-out tf-out-top">
+                  <span class="tf-label">Forwarded Request</span>
+                </div>
+                <div class="tf-out tf-out-bot">
+                  <div class="tf-icon alert-icon"><i data-lucide="shield-alert"></i></div>
+                  <span class="tf-label alert-text">Blocked</span>
+                </div>
+              </div>
+
+              <!-- Dashed Connecting Lines -->
+              <svg class="tf-lines" viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Left to Center -->
+                <path d="M 110 150 L 160 150" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" class="line-flow" />
+                <!-- Center to Headers -->
+                <path d="M 230 100 L 230 50 L 195 50" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4 4" class="line-flow" />
+                <!-- Center to Behavior -->
+                <path d="M 230 200 L 230 250 L 195 250" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4 4" class="line-flow" />
+                <!-- Center to Payloads -->
+                <path d="M 300 120 L 340 120 L 340 60" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4 4" class="line-flow" />
+                <!-- Center to Outputs -->
+                <path d="M 300 150 L 330 150" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" class="line-flow" />
+                <path d="M 330 150 L 330 240 L 350 240" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 4" class="line-flow-red" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Threat Detection -->
+      <div class="stack-card" id="stack-card-1">
+        <div class="stack-card-content">
+          <div class="stack-card-text">
+            <h3>Threat Detection</h3>
+            <p>ML algorithms identify SQL injection, XSS, DDoS, bot traffic, API abuse, and zero-day exploits using multi-vector analysis.</p>
+          </div>
+          <div class="stack-card-visual">
+            <div class="threat-diagram">
+              <!-- Top Node: Multi Vector Analysis -->
+              <div class="th-node node-mva">
+                <div class="th-icon"><i data-lucide="brain"></i></div>
+                <span>Multi Vector Analysis</span>
+              </div>
+
+              <!-- Left Attack Labels -->
+              <div class="th-attack-labels">
+                <span class="atk-tag tag-blocked">Blocked</span>
+                <span class="atk-tag tag-xss">XSS</span>
+                <span class="atk-tag tag-sqli">SQL Injection</span>
+                <span class="atk-tag tag-ddos">DDoS</span>
+              </div>
+
+              <!-- Center WAF Shield -->
+              <div class="th-waf-center">
+                <div class="waf-shield">
+                  <span>WAF</span>
+                </div>
+              </div>
+
+              <!-- Right Node: Web Server/Application -->
+              <div class="th-node node-srv">
+                <div class="th-icon"><i data-lucide="server"></i></div>
+                <span>Web Server/Application</span>
+              </div>
+
+              <!-- Bottom Pill: Legitimate Traffic -->
+              <div class="th-legit-pill">
+                <span>Legitimate Traffic</span>
+              </div>
+
+              <!-- SVG Animated Attack Bolts & Clean Routing Arrows -->
+              <svg class="th-svg" viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Red Attack Jagged Lightning Vectors -->
+                <path d="M 90 60 L 130 85 L 115 95 L 185 115" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="bolt-anim bolt-1" />
+                <path d="M 70 115 L 115 125 L 105 135 L 180 140" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="bolt-anim bolt-2" />
+                <path d="M 85 175 L 130 160 L 120 150 L 180 155" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="bolt-anim bolt-3" />
+                <path d="M 100 225 L 135 195 L 125 185 L 185 175" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="bolt-anim bolt-4" />
+
+                <!-- Red impact sparks on shield edge -->
+                <circle cx="185" cy="115" r="4" fill="#ef4444" class="spark-pulse" />
+                <circle cx="180" cy="140" r="4" fill="#ef4444" class="spark-pulse" />
+                <circle cx="180" cy="155" r="4" fill="#ef4444" class="spark-pulse" />
+                <circle cx="185" cy="175" r="4" fill="#ef4444" class="spark-pulse" />
+
+                <!-- Clean Blue Arrows Out -->
+                <!-- WAF to Web Server -->
+                <path d="M 285 150 L 325 150" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)" class="clean-arrow" />
+                <!-- WAF to Legitimate Traffic -->
+                <path d="M 235 200 L 235 240" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)" class="clean-arrow" />
+
+                <!-- Arrowhead definitions -->
+                <defs>
+                  <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#3b82f6" />
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Intelligent Response -->
+      <div class="stack-card" id="stack-card-2">
+        <div class="stack-card-content">
+          <div class="stack-card-text">
+            <h3>Intelligent Response</h3>
+            <p>Automated actions include blocking, rate limiting, virtual patching based on threat severity.</p>
+          </div>
+          <div class="stack-card-visual">
+            <div class="response-diagram">
+              <!-- Left Trigger Label -->
+              <div class="resp-trigger-label">
+                <span>Critical Threat<br/>Responses</span>
+              </div>
+
+              <!-- Center Hub Circle with Animated 4-Piece Puzzle Brain -->
+              <div class="resp-center-hub">
+                <svg class="puzzle-brain-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Top Left Quadrant: Frontal Lobe -->
+                  <g class="brain-piece piece-tl">
+                    <!-- Outer silhouette & interlocking tabs -->
+                    <path d="M 47 14 C 34 15 22 23 16 34 C 13 40 14 46 19 48 L 32 48 C 32 53 37 56 41 53 C 44 51 47 48 47 48 L 47 38 C 42 38 39 33 42 29 C 45 26 47 30 47 30 Z" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="#f8fafc" />
+                    <!-- Internal Brain Folds (Sulci) -->
+                    <path d="M 27 26 C 32 21 38 23 41 27" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                    <path d="M 23 36 C 28 33 34 36 33 42" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                  </g>
+
+                  <!-- Top Right Quadrant: Parietal Lobe -->
+                  <g class="brain-piece piece-tr">
+                    <!-- Outer silhouette & interlocking tabs -->
+                    <path d="M 53 14 C 66 15 78 23 84 34 C 87 40 86 46 81 48 L 68 48 C 68 43 63 40 59 43 C 56 45 53 48 53 48 L 53 36 C 58 36 61 31 58 27 C 55 24 53 28 53 28 Z" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="#f8fafc" />
+                    <!-- Internal Brain Folds -->
+                    <path d="M 73 26 C 68 21 62 23 59 27" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                    <path d="M 77 36 C 72 33 66 36 67 42" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                  </g>
+
+                  <!-- Bottom Left Quadrant: Temporal Lobe & Cerebellum -->
+                  <g class="brain-piece piece-bl">
+                    <!-- Outer silhouette & interlocking tabs -->
+                    <path d="M 47 86 C 34 85 22 77 16 66 C 13 60 14 54 19 52 L 34 52 C 34 58 39 61 43 58 C 46 56 47 52 47 52 L 47 64 C 42 64 39 69 42 73 C 45 76 47 72 47 72 Z" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="#f8fafc" />
+                    <!-- Internal Brain Folds -->
+                    <path d="M 27 74 C 32 79 38 77 41 73" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                    <path d="M 23 64 C 28 67 34 64 33 58" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                  </g>
+
+                  <!-- Bottom Right Quadrant: Occipital Lobe & Cerebellum -->
+                  <g class="brain-piece piece-br">
+                    <!-- Outer silhouette & interlocking tabs -->
+                    <path d="M 53 86 C 66 85 78 77 84 66 C 87 60 86 54 81 52 L 66 52 C 66 58 61 61 57 58 C 54 56 53 52 53 52 L 53 66 C 58 66 61 71 58 75 C 55 78 53 74 53 74 Z" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="#f8fafc" />
+                    <!-- Internal Brain Folds -->
+                    <path d="M 73 74 C 68 79 62 77 59 73" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                    <path d="M 77 64 C 72 67 66 64 67 58" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Right Colorful Action Badges -->
+              <div class="resp-badges">
+                <div class="action-badge badge-red">Emerging Threats</div>
+                <div class="action-badge badge-orange">Blocking</div>
+                <div class="action-badge badge-yellow">Rate Limiting</div>
+                <div class="action-badge badge-green">Virtual Patching</div>
+              </div>
+
+              <!-- SVG Connectors & Orange L-Arrow -->
+              <svg class="resp-svg" viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Left Orange L-Arrow -->
+                <path d="M 95 210 L 95 150 L 135 150" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrowOrange)" class="trigger-arrow" />
+                
+                <!-- Right Bracket Lines connecting Brain Circle to Badges -->
+                <path d="M 285 150 L 315 150" stroke="#94a3b8" stroke-width="1.5" />
+                <path d="M 315 48 L 315 252" stroke="#94a3b8" stroke-width="1.5" />
+                <path d="M 315 48 L 335 48" stroke="#94a3b8" stroke-width="1.5" />
+                <path d="M 315 116 L 335 116" stroke="#94a3b8" stroke-width="1.5" />
+                <path d="M 315 184 L 335 184" stroke="#94a3b8" stroke-width="1.5" />
+                <path d="M 315 252 L 335 252" stroke="#94a3b8" stroke-width="1.5" />
+
+                <!-- Arrowhead definition -->
+                <defs>
+                  <marker id="arrowOrange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#f97316" />
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Human in the Loop -->
+      <div class="stack-card" id="stack-card-3">
+        <div class="stack-card-content">
+          <div class="stack-card-text">
+            <h3>Human in the Loop</h3>
+            <p>SOC analysts review edge-case anomalies, tune confidence thresholds, and authorize custom virtual patches with one-click audit logging.</p>
+          </div>
+          <div class="stack-card-visual">
+            <div class="human-loop-diagram">
+              <!-- Left Trigger Label -->
+              <div class="hl-trigger-label">
+                <span>Critical Threat<br/>Responses</span>
+              </div>
+
+              <!-- Center Hub with Clockwise Rotating Arrows Ring -->
+              <div class="hl-center-hub">
+                <!-- Rotating Clockwise Ring -->
+                <svg class="clockwise-ring" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- 4 Curved Arrow Segments moving clockwise -->
+                  <!-- Top-Left Segment -->
+                  <path d="M 25 90 A 65 65 0 0 1 90 25" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" marker-end="url(#hlArrowCyan)" />
+                  <!-- Top-Right Segment -->
+                  <path d="M 90 25 A 65 65 0 0 1 155 90" stroke="#2563eb" stroke-width="4.5" stroke-linecap="round" marker-end="url(#hlArrowBlue)" />
+                  <!-- Bottom-Right Segment -->
+                  <path d="M 155 90 A 65 65 0 0 1 90 155" stroke="#0f172a" stroke-width="4.5" stroke-linecap="round" marker-end="url(#hlArrowDark)" />
+                  <!-- Bottom-Left Segment -->
+                  <path d="M 90 155 A 65 65 0 0 1 25 90" stroke="#60a5fa" stroke-width="4.5" stroke-linecap="round" marker-end="url(#hlArrowLight)" />
+
+                  <defs>
+                    <marker id="hlArrowCyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8" />
+                    </marker>
+                    <marker id="hlArrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                      <path d="M 0 1 L 8 5 L 0 9 z" fill="#2563eb" />
+                    </marker>
+                    <marker id="hlArrowDark" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                      <path d="M 0 1 L 8 5 L 0 9 z" fill="#0f172a" />
+                    </marker>
+                    <marker id="hlArrowLight" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                      <path d="M 0 1 L 8 5 L 0 9 z" fill="#60a5fa" />
+                    </marker>
+                  </defs>
+                </svg>
+
+                <!-- Static Center Human Icon & Label -->
+                <div class="hl-inner-center">
+                  <div class="hl-human-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="human-icon">
+                      <circle cx="12" cy="7" r="3" fill="#ffffff" />
+                      <path d="M 5 12 L 10 15 L 10 21 L 14 21 L 14 15 L 19 12" stroke="#ffffff" stroke-width="2.5" />
+                    </svg>
+                  </div>
+                  <span class="hl-center-text">Human-in-the-<br/>Loop Validation</span>
+                </div>
+              </div>
+
+              <!-- Right Sleek Pill Badges wrapping around circle curve -->
+              <div class="hl-badges-curved">
+                <div class="hl-pill pill-c1">Confirmed Actions</div>
+                <div class="hl-pill pill-c2">Validate Responses</div>
+                <div class="hl-pill pill-c3">Updated AI Logic</div>
+                <div class="hl-pill pill-c4">Complex Scenarios</div>
+              </div>
+
+              <!-- SVG Horizontal Trigger Arrow -->
+              <svg class="hl-svg" viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 88 175 L 125 175" stroke="#ef4444" stroke-width="2.5" marker-end="url(#hlTriggerArrow)" />
+                <defs>
+                  <marker id="hlTriggerArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#ef4444" />
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Continuous Learning -->
+      <!-- Card 5: Continuous Learning -->
+      <div class="stack-card" id="stack-card-4">
+        <div class="stack-card-content">
+          <div class="stack-card-text">
+            <h3>Continuous Learning</h3>
+            <p>Autonomous reinforcement models adapt baseline profiles daily, eliminating false positives and evolving defenses alongside application code updates.</p>
+          </div>
+          <div class="stack-card-visual">
+            <div class="learning-diagram">
+              <!-- Left Incoming Attack Patterns Stream -->
+              <div class="cl-incoming-stream">
+                <div class="cl-arrow-container">
+                  <svg viewBox="0 0 90 24" fill="none" class="cl-arrow-svg">
+                    <path d="M 0 12 L 72 12" stroke="#2563eb" stroke-width="2.8" />
+                    <polygon points="72,4 88,12 72,20" fill="#2563eb" />
+                  </svg>
+                  <!-- Animated Incoming Pulses flowing along arrow -->
+                  <span class="cl-pulse-dot p1"></span>
+                  <span class="cl-pulse-dot p2"></span>
+                  <span class="cl-pulse-dot p3"></span>
+                </div>
+                <span class="cl-incoming-label">New Attack<br/>Patterns & Apps</span>
+              </div>
+
+              <!-- Center Hub with Real-Time Data Stream Brain -->
+              <div class="cl-center-hub">
+                <svg class="cl-brain-outline" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Official Anatomical 2-Hemisphere Brain Shape -->
+                  <path d="M 12 5 a 3 3 0 1 0 -5.997 .125 4 4 0 0 0 -2.526 5.77 4 4 0 0 0 .556 6.588 A 4 4 0 1 0 12 18 Z" fill="#f8fafc" />
+                  <path d="M 12 5 a 3 3 0 1 1 5.997 .125 4 4 0 0 1 2.526 5.77 4 4 0 0 1 -.556 6.588 A 4 4 0 1 1 12 18 Z" fill="#f8fafc" />
+                  <path d="M 15 13 a 4.5 4.5 0 0 1 -3 -4 4.5 4.5 0 0 1 -3 4" stroke="#2563eb" stroke-width="1.2" />
+                  <path d="M 17.599 6.5 a 3 3 0 0 0 .399 -1.375" />
+                  <path d="M 6.003 5.125 A 3 3 0 0 0 6.401 6.5" />
+                  <path d="M 3.477 10.896 a 4 4 0 0 1 .585 -.396" />
+                  <path d="M 19.938 10.5 a 4 4 0 0 1 .585 .396" />
+                  <path d="M 6 18 a 4 4 0 0 1 -1.967 -.516" />
+                  <path d="M 19.967 17.484 A 4 4 0 0 1 18 18" />
+                </svg>
+                <div class="cl-center-text">Real - Time<br/>Data Stream</div>
+              </div>
+
+              <!-- Right Dashed Connectors -->
+              <svg class="cl-connectors" viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Dashed lines connecting Circle Edge to Modules -->
+                <path d="M 280 150 L 280 38 L 335 38" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+                <path d="M 280 150 L 335 110" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+                <path d="M 280 150 L 335 190" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+                <path d="M 280 150 L 280 262 L 335 262" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+              </svg>
+
+              <!-- Right Output Modules -->
+              <div class="cl-modules">
+                <!-- Module 1 -->
+                <div class="cl-mod mod-1">
+                  <div class="cl-mod-icon"><span class="ai-txt">AI</span></div>
+                  <span class="cl-mod-label">Updated AI Logic</span>
+                </div>
+                <!-- Module 2 -->
+                <div class="cl-mod mod-2">
+                  <div class="cl-mod-icon"><i data-lucide="message-square-diff"></i></div>
+                  <span class="cl-mod-label">Refined Responses</span>
+                </div>
+                <!-- Module 3 -->
+                <div class="cl-mod mod-3">
+                  <div class="cl-mod-icon"><i data-lucide="bar-chart-2"></i></div>
+                  <span class="cl-mod-label">Unified Baselines</span>
+                </div>
+                <!-- Module 4 -->
+                <div class="cl-mod mod-4">
+                  <div class="cl-mod-icon"><i data-lucide="settings"></i></div>
+                  <span class="cl-mod-label">Automated Adaptation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Platform Offerings Section -->
+  <section id="platform-architecture" class="section container tabs-section">
+    <div class="section-title">
+      <span class="hero-tag"><i data-lucide="layers"></i> PLATFORM ARCHITECTURE</span>
+      <h2>Unified Enterprise Security Stack</h2>
+      <p>Combining 6 essential defensive capabilities into a single consolidated cloud console to eliminate point-solution complexity.</p>
+    </div>
+
+    <div class="tabs-header">
+      <button class="tab-btn active" data-tab="waap">WAAP Platform</button>
+      <button class="tab-btn" data-tab="api">API Security</button>
+      <button class="tab-btn" data-tab="waf">WAF Solutions</button>
+      <button class="tab-btn" data-tab="bot">Bot Mitigation</button>
+      <button class="tab-btn" data-tab="ddos">DDoS Defense</button>
+      <button class="tab-btn" data-tab="cdn">Global Edge CDN</button>
+    </div>
+
+    <!-- Tab 1: WAAP -->
+    <div id="tab-waap" class="tab-content active">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="shield"></i></div>
+            <h3>Autonomous Behavioral WAF</h3>
+            <p>Moving beyond legacy signature rules. Zelophaze uses unsupervised machine learning models to analyze application traffic patterns and automatically neutralize zero-day vulnerabilities.</p>
+            <ul class="card-list">
+              <li><i data-lucide="check-circle-2"></i> Instant OWASP Top 10 automated defense</li>
+              <li><i data-lucide="check-circle-2"></i> Zero rule maintenance fatigue</li>
+              <li><i data-lucide="check-circle-2"></i> Sub-millisecond inspection latency (&lt; 0.4ms)</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline open-demo-modal" style="width: 100%; justify-content: center;">Platform Specifications</button>
+        </div>
+
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="cpu"></i></div>
+            <h3>Kubernetes Native Integration</h3>
+            <p>Designed for containerized microservice environments. Deploy directly within your Kubernetes clusters as an ingress controller or envoy sidecar proxy for east-west traffic inspection.</p>
+            <ul class="card-list">
+              <li><i data-lucide="check-circle-2"></i> Complete inter-pod API visibility</li>
+              <li><i data-lucide="check-circle-2"></i> Zero application code modification</li>
+              <li><i data-lucide="check-circle-2"></i> Elastic scaling under burst traffic</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline open-demo-modal" style="width: 100%; justify-content: center;">Kubernetes Guide</button>
+        </div>
+
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="activity"></i></div>
+            <h3>24×7 Managed SOC Inclusion</h3>
+            <p>Every deployment is backed around the clock by our dedicated cybersecurity operations center. Our analysts continuously monitor telemetry, investigate anomalies, and apply virtual patches.</p>
+            <ul class="card-list">
+              <li><i data-lucide="check-circle-2"></i> Dedicated Incident Response analysts</li>
+              <li><i data-lucide="check-circle-2"></i> Proactive virtual patching</li>
+              <li><i data-lucide="check-circle-2"></i> Monthly executive compliance reports</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline open-demo-modal" style="width: 100%; justify-content: center;">Connect with SOC</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: API Security -->
+    <div id="tab-api" class="tab-content">
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 36px; box-shadow: var(--shadow-sm);">
+        <div>
+          <span class="hero-tag"><i data-lucide="cpu"></i> API GOVERNANCE</span>
+          <h3 style="font-size: 2rem; margin: 16px 0; color: #0f172a;">Automated Discovery & Schema Enforcement</h3>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">Discover shadow, zombie, and undocumented API endpoints across your infrastructure. Enforce OpenAPI/Swagger specifications in real time to prevent Broken Object Level Authorization (BOLA).</p>
+          <ul class="card-list" style="margin-bottom: 28px;">
+            <li><i data-lucide="check-circle-2"></i> Continuous endpoint inventory for REST, GraphQL, and gRPC.</li>
+            <li><i data-lucide="check-circle-2"></i> Automated data masking for PII, credit card data, and tokens.</li>
+            <li><i data-lucide="check-circle-2"></i> Seamless DevSecOps CI/CD integration.</li>
+          </ul>
+          <button class="btn btn-primary open-demo-modal">Schedule API Assessment <i data-lucide="arrow-up-right"></i></button>
+        </div>
+        <div class="visual-frame">
+          <div class="visual-inner">
+            <img src="/assets/images/api-matrix.png" alt="API Security Matrix" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: WAF Solutions -->
+    <div id="tab-waf" class="tab-content">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="cloud"></i></div>
+            <h3>Cloud WAF</h3>
+            <p>Global DNS redirection routes application traffic through our 120+ Tbps edge scrubbing network, blocking attacks before reaching your cloud origin.</p>
+          </div>
+          <button class="btn btn-outline open-demo-modal">Cloud WAF Docs</button>
+        </div>
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="server"></i></div>
+            <h3>Hybrid WAF</h3>
+            <p>Combine edge cloud acceleration with localized on-premises filtering. Engineered for strict regulatory frameworks including GDPR, HIPAA, and PCI-DSS 4.0.</p>
+          </div>
+          <button class="btn btn-outline open-demo-modal">Hybrid WAF Docs</button>
+        </div>
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="lock"></i></div>
+            <h3>Air-Gapped On-Premises WAF</h3>
+            <p>Deploy directly within isolated enterprise data centers or government cloud environments. Complete data residency with localized AI inference.</p>
+          </div>
+          <button class="btn btn-outline open-demo-modal">On-Premises Specs</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: Bot Mitigation -->
+    <div id="tab-bot" class="tab-content">
+      <div class="feature-card" style="max-width: 900px; margin: 0 auto; padding: 44px;">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto 30px;">
+          <div class="card-icon" style="margin: 0 auto 18px;"><i data-lucide="eye"></i></div>
+          <h3>Stop Scrapers & Credential Stuffing Without CAPTCHAs</h3>
+          <p>Traditional CAPTCHAs disrupt legitimate user workflows and lower conversion rates. Zelophaze utilizes transparent cryptographic challenges, TLS client fingerprinting, and behavioral navigation heuristics to neutralize automated bots silently.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+          <div style="background: #f8fafc; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid var(--border-color);">
+            <h4 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 6px;">100%</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Automated Bot & Scraper Mitigation</p>
+          </div>
+          <div style="background: #f8fafc; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid var(--border-color);">
+            <h4 style="color: var(--accent-cyan); font-size: 1.5rem; margin-bottom: 6px;">0.00%</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Customer Friction or Visual CAPTCHAs</p>
+          </div>
+          <div style="background: #f8fafc; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid var(--border-color);">
+            <h4 style="color: var(--success-green); font-size: 1.5rem; margin-bottom: 6px;">15 Min</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Rapid DNS CNAME Onboarding</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 5: DDoS Defense -->
+    <div id="tab-ddos" class="tab-content">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="zap"></i></div>
+            <h3>Layer-7 Application DDoS Defense</h3>
+            <p>Intercept low-and-slow Slowloris floods, HTTP request exhaustion, and GraphQL query attacks that bypass traditional network infrastructure firewalls.</p>
+          </div>
+          <button class="btn btn-outline open-demo-modal">Layer-7 Specifications</button>
+        </div>
+        <div class="feature-card">
+          <div>
+            <div class="card-icon"><i data-lucide="globe"></i></div>
+            <h3>120+ Tbps Global Scrubbing Capacity</h3>
+            <p>Absorb massive volumetric bursts across 85 global data center points-of-presence (PoP) with zero impact on application performance.</p>
+          </div>
+          <button class="btn btn-outline open-demo-modal">Global Network Map</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 6: Global Edge CDN -->
+    <div id="tab-cdn" class="tab-content">
+      <div style="text-align: center; max-width: 780px; margin: 0 auto; background: #ffffff; padding: 44px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+        <span class="hero-tag"><i data-lucide="globe"></i> EDGE ACCELERATION</span>
+        <h3 style="font-size: 2rem; margin: 16px 0; color: #0f172a;">Integrated Security & Content Delivery</h3>
+        <p style="color: var(--text-muted); margin-bottom: 28px;">Accelerate global delivery of web assets and dynamic APIs while edge AI models inspect requests in sub-milliseconds. Supports automated Brotli compression and HTTP/3 QUIC.</p>
+        <button class="btn btn-primary open-demo-modal">Accelerate Enterprise Apps</button>
+      </div>
+  </section>
+
+  <!-- Deploy Anywhere, Protect Everything Section -->
+  <section id="deploy-anywhere" class="deploy-anywhere-section container">
+    <div class="section-title">
+      <h2 style="font-size: 2.75rem; font-weight: 800; color: #0f172a; margin-bottom: 50px;">Deploy Anywhere, <span style="color: var(--primary-color);">Protect Everything</span></h2>
+    </div>
+
+    <div class="deploy-network-box">
+      <!-- Full-Box Precision SVG Overlay with Native 100% Perfectly Aligned In-Line Flow -->
+      <svg class="deploy-full-svg" viewBox="0 0 1140 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="pulseSphereGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#2563eb" flood-opacity="0.95" />
+          </filter>
+        </defs>
+
+        <!-- Static Background Tracks (Faint Blue) -->
+        <path d="M 310 40 C 390 40, 405 250, 485 250" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 310 145 C 390 145, 405 250, 485 250" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 310 250 L 485 250" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 310 355 C 390 355, 405 250, 485 250" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 310 460 C 390 460, 405 250, 485 250" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+
+        <path d="M 655 250 C 735 250, 750 40, 830 40" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 655 250 C 735 250, 750 145, 830 145" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 655 250 L 830 250" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 655 250 C 735 250, 750 355, 830 355" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+        <path d="M 655 250 C 735 250, 750 460, 830 460" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25" />
+
+        <!-- Round Spherical Pulse Balls (Heart Monitor Style) Traveling Left -> Logo -> Right -->
+        <g filter="url(#pulseSphereGlow)">
+          <!-- Left Orbs -->
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="0s" path="M 310 40 C 390 40, 405 250, 485 250" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.48s" path="M 310 145 C 390 145, 405 250, 485 250" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.96s" path="M 310 250 L 485 250" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.44s" path="M 310 355 C 390 355, 405 250, 485 250" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.92s" path="M 310 460 C 390 460, 405 250, 485 250" />
+          </g>
+
+          <!-- Right Orbs -->
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="0s" path="M 655 250 C 735 250, 750 40, 830 40" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.48s" path="M 655 250 C 735 250, 750 145, 830 145" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.96s" path="M 655 250 L 830 250" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.44s" path="M 655 250 C 735 250, 750 355, 830 355" />
+          </g>
+          <g>
+            <circle r="6.5" fill="#2563eb" />
+            <circle r="2.8" fill="#ffffff" />
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.92s" path="M 655 250 C 735 250, 750 460, 830 460" />
+          </g>
+        </g>
+      </svg>
+
+      <!-- Left Column: Environments -->
+      <div class="deploy-precision-col deploy-pcol-left">
+        <div class="deploy-pcard-left">
+          <div class="deploy-picon"><i data-lucide="cloud"></i></div>
+          <span>Cloud-Native (AWS, Azure, GCP)</span>
+        </div>
+        <div class="deploy-pcard-left">
+          <div class="deploy-picon"><i data-lucide="server"></i></div>
+          <span>On-Premises</span>
+        </div>
+        <div class="deploy-pcard-left">
+          <div class="deploy-picon"><i data-lucide="layers"></i></div>
+          <span>Hybrid Cloud</span>
+        </div>
+        <div class="deploy-pcard-left">
+          <div class="deploy-picon"><i data-lucide="box"></i></div>
+          <span>Kubernetes / Container-based</span>
+        </div>
+        <div class="deploy-pcard-left">
+          <div class="deploy-picon"><i data-lucide="globe"></i></div>
+          <span>Multi-Cloud</span>
+        </div>
+      </div>
+
+      <!-- Center Shield Hub with Official Zelophaze Brand Logo -->
+      <div class="deploy-precision-hub">
+        <div class="deploy-hub-glow">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 105px; height: 105px; filter: drop-shadow(0 0 14px rgba(56, 189, 248, 0.7)); position: relative; z-index: 10;">
+            <path d="M50 8 L86 22 V50 C86 74 50 92 50 92 C50 92 14 74 14 50 V22 L50 8Z" stroke="#38bdf8" stroke-width="5.5" fill="url(#hubLogoGrad)" />
+            <path d="M34 36 H66 L38 64 H66" stroke="#00f0ff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="66" cy="36" r="4" fill="#38bdf8" />
+            <circle cx="38" cy="64" r="4" fill="#00f0ff" />
+            <defs>
+              <linearGradient id="hubLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1e3a8a" />
+                <stop offset="50%" stop-color="#0284c7" />
+                <stop offset="100%" stop-color="#0891b2" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Right Column: Specs / Metrics -->
+      <div class="deploy-precision-col deploy-pcol-right">
+        <div class="deploy-pcard-right">
+          <h4>Supported Platforms</h4>
+          <p>AWS EC2, Azure VMs, GCP Compute, Kubernetes, Docker, On-Prem Hardware & Private Cloud</p>
+        </div>
+        <div class="deploy-pcard-right">
+          <h4>Deployment Time</h4>
+          <p>15 minutes average with automated configuration</p>
+        </div>
+        <div class="deploy-pcard-right">
+          <h4>Integration Methods</h4>
+          <p>Reverse Proxy, DNS-based, API Gateway, Service Mesh</p>
+        </div>
+        <div class="deploy-pcard-right">
+          <h4>Performance Impact</h4>
+          <p>&lt;5ms latency added, supports 10,000+ requests/sec on a single on-prem instance</p>
+        </div>
+        <div class="deploy-pcard-right">
+          <h4>Scalability</h4>
+          <p>Auto-scaling based on traffic, supports unlimited applications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise-Grade Security, Startup-Speed Deployment -->
+  <section class="startup-speed-section">
+    <div class="container">
+      <div class="startup-speed-box">
+        <h2 class="startup-speed-title">Enterprise-Grade Security, <span style="color: #2563eb;">Startup-Speed Deployment</span></h2>
+
+        <!-- Interactive Pill Tabs -->
+        <div class="startup-tabs-row" id="startupTabs">
+          <button class="startup-tab-btn active" data-target="panel-sec">For Security Teams</button>
+          <button class="startup-tab-btn" data-target="panel-dev">For DevOps Teams</button>
+          <button class="startup-tab-btn" data-target="panel-biz">For Business Leaders</button>
+        </div>
+
+        <!-- Panel 1: Security Teams -->
+        <div class="startup-panel active" id="panel-sec">
+          <div class="startup-panel-left">
+            <h3>For Security Teams</h3>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Automated threat hunting and incident response</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Real-time attack visualization dashboard</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Custom security policies with one click deployment</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Integration with SIEM, SOAR, and monitoring tools</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Compliance reporting for SOC 2, HIPAA, PCI DSS, GDPR</div>
+          </div>
+          <div class="startup-panel-right" style="padding: 24px; background: #0b1120; min-height: 280px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 12px; margin-bottom: 16px;">
+              <span style="color: #38bdf8; font-weight: 700; font-size: 0.88rem; display: flex; align-items: center; gap: 8px;"><span class="live-radar-dot"></span><i data-lucide="activity" style="width:16px;height:16px;"></i> LIVE THREAT RADAR</span>
+              <span style="background: rgba(239,68,68,0.2); color: #f87171; font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 20px;">AUTOMATED BLOCKING ACTIVE</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="live-stat-card">
+                <div style="color: #94a3b8; font-size: 0.75rem; font-weight: 600;">Mitigated Attacks (24h)</div>
+                <div style="color: #38bdf8; font-size: 1.5rem; font-weight: 800; margin-top: 4px;">1,429,880</div>
+              </div>
+              <div class="live-stat-card">
+                <div style="color: #94a3b8; font-size: 0.75rem; font-weight: 600;">Zero-Day Latency</div>
+                <div style="color: #4ade80; font-size: 1.5rem; font-weight: 800; margin-top: 4px;">&lt; 0.38 ms</div>
+              </div>
+            </div>
+            <div style="margin-top: 14px; background: #1e293b; padding: 12px; border-radius: 10px; display: flex; align-items: center; gap: 10px; font-size: 0.8rem; color: #cbd5e1;">
+              <span class="live-radar-dot" style="width:8px;height:8px;"></span>
+              <span>SIEM / Splunk / Sentinel Webhook Stream: <strong>Connected</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: DevOps Teams -->
+        <div class="startup-panel" id="panel-dev">
+          <div class="startup-panel-left">
+            <h3>For DevOps Teams</h3>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Zero-friction Kubernetes sidecar & eBPF injection</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> GitOps security policy management via YAML & Terraform</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Automated CI/CD vulnerability scanning hooks</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Auto-discovery of API routes from OpenAPI / Swagger specs</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Zero downtime deployment or service restarts required</div>
+          </div>
+          <div class="startup-panel-right" style="padding: 24px; background: #0b1120; min-height: 280px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 12px; margin-bottom: 16px;">
+              <span style="color: #a855f7; font-weight: 700; font-size: 0.88rem; display: flex; align-items: center; gap: 8px;"><span class="live-radar-dot" style="background:#a855f7;"></span><i data-lucide="terminal" style="width:16px;height:16px;"></i> GITOPS PIPELINE STATUS</span>
+              <span style="background: rgba(168,85,247,0.2); color: #c084fc; font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 20px;">TERRAFORM SYNCHRONIZED</span>
+            </div>
+            <div class="live-stat-card" style="font-family: monospace; font-size: 0.82rem; background: #1e293b; padding: 14px; border-radius: 10px; color: #e2e8f0; line-height: 1.6; text-align: left;">
+              <div style="color: #4ade80;">$ kubectl apply -f zelophaze-waap-policy.yaml</div>
+              <div style="color: #94a3b8;">&gt; namespace/prod configured</div>
+              <div style="color: #38bdf8;">&gt; daemonset.apps/zelophaze-ebpf-agent verified</div>
+              <div style="color: #facc15;">&gt; Inline enforcement active across 48 pods</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Business Leaders -->
+        <div class="startup-panel" id="panel-biz">
+          <div class="startup-panel-left">
+            <h3>For Business Leaders</h3>
+            <div class="startup-bullet"><i data-lucide="shield"></i> 85% reduction in security maintenance and infrastructure overhead</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> 99.999% SLA uptime guarantee with global automated failover</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Instant board-ready compliance audit reporting (SOC 2 / ISO)</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Eliminates financial loss from API abuse and bot scraping</div>
+            <div class="startup-bullet"><i data-lucide="shield"></i> Predictable enterprise pricing with zero bandwidth penalty fees</div>
+          </div>
+          <div class="startup-panel-right" style="padding: 24px; background: #0b1120; min-height: 280px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 12px; margin-bottom: 16px;">
+              <span style="color: #4ade80; font-weight: 700; font-size: 0.88rem; display: flex; align-items: center; gap: 8px;"><span class="live-radar-dot"></span><i data-lucide="trending-up" style="width:16px;height:16px;"></i> EXECUTIVE ROI SUMMARY</span>
+              <span style="background: rgba(74,222,128,0.2); color: #4ade80; font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 20px;">AUDIT READY</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="live-stat-card">
+                <div style="color: #94a3b8; font-size: 0.75rem; font-weight: 600;">Annual Cost Savings</div>
+                <div style="color: #4ade80; font-size: 1.5rem; font-weight: 800; margin-top: 4px;">$480K+</div>
+              </div>
+              <div class="live-stat-card">
+                <div style="color: #94a3b8; font-size: 0.75rem; font-weight: 600;">Time to Compliance</div>
+                <div style="color: #38bdf8; font-size: 1.5rem; font-weight: 800; margin-top: 4px;">&lt; 48 Hrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabBtns = document.querySelectorAll('.startup-tab-btn');
+      const panels = document.querySelectorAll('.startup-panel');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          panels.forEach(p => p.classList.remove('active'));
+
+          btn.classList.add('active');
+          const targetId = btn.getAttribute('data-target');
+          const activePanel = document.getElementById(targetId);
+          if (activePanel) {
+            activePanel.classList.add('active');
+          }
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        });
+      });
+    });
+  </script>
+
+  <section id="solutions" class="section" style="background: #f1f5f9; border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title" style="text-align: left;">
+        <span class="hero-tag"><i data-lucide="database"></i> INDUSTRY SOLUTIONS</span>
+        <h2 style="margin-bottom: 8px;">Tailored for Mission-Critical Infrastructure</h2>
+        <p style="margin: 0;">Engineered specifically for regulated sectors and high-concurrency enterprise ecosystems.</p>
+      </div>
+
+      <div class="industry-slider-wrapper">
+        <button class="slider-side-btn prev-btn" id="indPrevBtn" aria-label="Slide Left"><i data-lucide="chevron-left"></i></button>
+        <button class="slider-side-btn next-btn" id="indNextBtn" aria-label="Slide Right"><i data-lucide="chevron-right"></i></button>
+        <div class="industry-slider-track" id="indSliderTrack">
+          <div class="industry-slide-card">
+            <div>
+              <div class="card-icon"><i data-lucide="activity"></i></div>
+              <h3>Healthcare & Pharma</h3>
+              <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.5; margin-bottom: 20px;">Comprehensive HIPAA and HITRUST compliance defense for patient portals, telemetry APIs, and clinical database infrastructure against ransomware.</p>
+            </div>
+            <a href="#" class="btn btn-outline open-demo-modal" style="justify-content: center; width: 100%;">Healthcare Case Study</a>
+          </div>
+
+          <div class="industry-slide-card">
+            <div>
+              <div class="card-icon"><i data-lucide="lock"></i></div>
+              <h3>BFSI & Banking Infrastructure</h3>
+              <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.5; margin-bottom: 20px;">Protect Open Banking APIs, trading gateways, and digital payment transactions. Prevents account takeovers while complying with PCI-DSS 4.0.</p>
+            </div>
+            <a href="#" class="btn btn-outline open-demo-modal" style="justify-content: center; width: 100%;">Banking Security Docs</a>
+          </div>
+
+          <div class="industry-slide-card">
+            <div>
+              <div class="card-icon"><i data-lucide="shopping-cart"></i></div>
+              <h3>E-Commerce & Retail Defense</h3>
+              <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.5; margin-bottom: 20px;">Block scalper bots during flash sales and eliminate scraping automation without adding friction or latency during customer checkout.</p>
+            </div>
+            <a href="#" class="btn btn-outline open-demo-modal" style="justify-content: center; width: 100%;">Retail Defense Overview</a>
+          </div>
+
+          <div class="industry-slide-card">
+            <div>
+              <div class="card-icon"><i data-lucide="plane"></i></div>
+              <h3>Aviation & Aerospace</h3>
+              <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.5; margin-bottom: 20px;">Secure flight control telemetry networks, airline reservation APIs, and passenger booking engines against sophisticated automated cyber intrusions and DDoS disruptions.</p>
+            </div>
+            <a href="#" class="btn btn-outline open-demo-modal" style="justify-content: center; width: 100%;">Aviation Defense Specs</a>
+          </div>
+
+          <div class="industry-slide-card">
+            <div>
+              <div class="card-icon"><i data-lucide="cloud-lightning"></i></div>
+              <h3>SaaS Platforms & B2B Cloud</h3>
+              <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.5; margin-bottom: 20px;">Protect multi-tenant customer APIs, webhook endpoints, and authentication microservices with autonomous inline filtering and ultra-low latency enforcement.</p>
+            </div>
+            <a href="#" class="btn btn-outline open-demo-modal" style="justify-content: center; width: 100%;">SaaS Integration Guide</a>
+          </div>
+
+          <div class="industry-slide-card">
+            <div>
+              <div class="card-icon"><i data-lucide="shield-check"></i></div>
+              <h3>Government & Defense</h3>
+              <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.5; margin-bottom: 20px;">Zero-trust sovereign API protection tailored for FedRAMP-aligned federal portals, municipal citizen databases, and national critical infrastructure defense.</p>
+            </div>
+            <a href="#" class="btn btn-outline open-demo-modal" style="justify-content: center; width: 100%;">Government Case Study</a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const track = document.getElementById('indSliderTrack');
+          const prevBtn = document.getElementById('indPrevBtn');
+          const nextBtn = document.getElementById('indNextBtn');
+          if (track && prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+              track.scrollBy({ left: -384, behavior: 'smooth' });
+            });
+            nextBtn.addEventListener('click', () => {
+              track.scrollBy({ left: 384, behavior: 'smooth' });
+            });
+          }
+        });
+      </script>
+
+      <div style="margin-top: 50px; text-align: center;">
+        <h4 style="font-size: 1rem; color: var(--text-muted); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1.5px;">Native Integration Across Enterprise Cloud Frameworks</h4>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <span class="btn btn-outline" style="cursor: default;"><i data-lucide="cloud" style="color: #2563eb;"></i> Google Cloud Platform</span>
+          <span class="btn btn-outline" style="cursor: default;"><i data-lucide="cloud" style="color: #f59e0b;"></i> Amazon Web Services</span>
+          <span class="btn btn-outline" style="cursor: default;"><i data-lucide="cloud" style="color: #0284c7;"></i> Microsoft Azure</span>
+          <span class="btn btn-outline" style="cursor: default;"><i data-lucide="server" style="color: #6366f1;"></i> Kubernetes / OpenShift</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI & Cost Calculator -->
+  <section id="roi" class="section container">
+    <div class="section-title">
+      <span class="hero-tag"><i data-lucide="bar-chart-3"></i> BUSINESS VALUE CALCULATOR</span>
+      <h2>Estimate Enterprise ROI</h2>
+      <p>Legacy rule maintenance and bot infrastructure overhead drain security budgets. Calculate your projected monthly savings when migrating to Zelophaze.</p>
+    </div>
+
+    <div class="roi-card">
+      <div>
+        <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: #0f172a;">Infrastructure Parameters</h3>
+        
+        <div class="slider-group">
+          <label>Monthly Web & API Requests: <span id="val-requests">80M / month</span></label>
+          <input type="range" id="slider-requests" min="10" max="500" step="10" value="80" />
+        </div>
+
+        <div class="slider-group">
+          <label>Current Monthly Cloud WAF Spend: <span id="val-cost">$15,000 / mo</span></label>
+          <input type="range" id="slider-cost" min="2000" max="80000" step="2000" value="15000" />
+        </div>
+
+        <div style="display: flex; gap: 16px; margin-top: 28px;">
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--success-green); font-weight: 600;">
+            <i data-lucide="check-circle-2"></i> 65% Bandwidth Reduction
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--primary-color); font-weight: 600;">
+            <i data-lucide="check-circle-2"></i> Zero Rule Tuning Cost
+          </div>
+        </div>
+      </div>
+
+      <div class="roi-results">
+        <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); font-weight: 600;">Projected Monthly Savings</div>
+        <div class="result-val" id="display-savings">$18,500</div>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Includes eliminated scraper traffic, automated virtual patching, and dedicated 24/7 SOC monitoring.</p>
+        <button class="btn btn-primary open-demo-modal" style="width: 100%; justify-content: center;">Request Enterprise Pricing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Case Studies -->
+  <section id="case-studies" class="section container">
+    <div class="section-title">
+      <span class="hero-tag"><i data-lucide="check-circle-2"></i> PROVEN TRACK RECORD</span>
+      <h2>Trusted by Critical Infrastructure</h2>
+      <p>How global enterprises secured mission-critical applications with Zelophaze.</p>
+    </div>
+
+    <div class="case-grid">
+      <div class="case-card">
+        <div>
+          <div class="case-tag">POWER GRID & UTILITIES</div>
+          <h3 class="case-title">Protecting Energy Grid Telemetry & Billing APIs Against Real-Time Attacks</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">When a national energy provider faced state-sponsored volumetric API attacks, Zelophaze deployed within 15 minutes via Kubernetes sidecars, neutralizing 100% of malicious requests.</p>
+        </div>
+        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: var(--primary-color); font-weight: 700;">100% Uptime Maintained</span>
+          <a href="#" class="open-demo-modal" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Read Case Study &rarr;</a>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div>
+          <div class="case-tag">GLOBAL FINTECH & BANKING</div>
+          <h3 class="case-title">Eliminating $450K/Month in Credential Stuffing & Account Takeovers</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Legacy CAPTCHAs caused 12% customer drop-off. Zelophaze's AI challenge engine blocked 2.4 million daily scraper bots while boosting login completion rates by 14%.</p>
+        </div>
+        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: var(--success-green); font-weight: 700;">$5.4M Annual Fraud Saved</span>
+          <a href="#" class="open-demo-modal" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Read Case Study &rarr;</a>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div>
+          <div class="case-tag">TIER-1 E-COMMERCE RETAILER</div>
+          <h3 class="case-title">Surviving Flash Sales with 120 Tbps Edge Layer-7 DDoS Absorption</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">During peak holiday traffic surges, Zelophaze absorbed a 42M request/sec assault silently while accelerating checkout page load times by 38%.</p>
+        </div>
+        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: var(--accent-cyan); font-weight: 700;">38% Faster Load Time</span>
+          <a href="#" class="open-demo-modal" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Read Case Study &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="container" style="margin-bottom: 90px;">
+    <div class="cta-box">
+      <span class="hero-tag" style="background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.25); color: #fff;">AUTONOMOUS ENTERPRISE SECURITY</span>
+      <h2 style="color: #ffffff;">Secure Your Applications in Under 15 Minutes</h2>
+      <p style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: #e2e8f0;">No complex hardware deployment or code modifications required. Connect your DNS CNAME and activate autonomous AI defense across your infrastructure.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <button class="btn btn-primary open-demo-modal" style="padding: 14px 34px; font-size: 1.05rem;">
+          Schedule Enterprise Demo <i data-lucide="arrow-up-right"></i>
+        </button>
+        <button class="btn btn-outline open-demo-modal" style="padding: 14px 30px; font-size: 1.05rem; background: transparent; color: #fff; border-color: rgba(255,255,255,0.3);">
+          Talk to a Security Architect
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="brand" style="margin-bottom: 18px;">
+            <div class="logo-icon" style="width: 36px; height: 36px;">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 8 L86 22 V50 C86 74 50 92 50 92 C50 92 14 74 14 50 V22 L50 8Z" stroke="#3b82f6" stroke-width="6" fill="rgba(255, 255, 255, 0.1)" />
+                <path d="M34 36 H66 L38 64 H66" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <span class="brand-name" style="font-size: 1.35rem; color: #ffffff;">Zelophaze</span>
+          </a>
+          <p style="color: #94a3b8; font-size: 0.9rem; max-width: 300px;">
+            Enterprise AI WAAP & API Security Platform providing autonomous threat mitigation against OWASP Top 10, bots, and Layer-7 DDoS.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#platform-waap">WAAP Platform</a></li>
+            <li><a href="#platform-api">API Security Engine</a></li>
+            <li><a href="#platform-waf">Hybrid & Cloud WAF</a></li>
+            <li><a href="#platform-bot">AI Bot Mitigation</a></li>
+            <li><a href="#platform-ddos">Layer-7 DDoS Defense</a></li>
+            <li><a href="#platform-cdn">Global Edge CDN</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#">WAF as a Service</a></li>
+            <li><a href="#">MSP & MSSP Partner Program</a></li>
+            <li><a href="#">Healthcare & Pharma</a></li>
+            <li><a href="#">BFSI & Fintech Security</a></li>
+            <li><a href="#">E-Commerce Defense</a></li>
+            <li><a href="#">Kubernetes Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Documentation & API</a></li>
+            <li><a href="#">Threat Intelligence Reports</a></li>
+            <li><a href="#">SOC 2 Type II Compliance</a></li>
+            <li><a href="#">System Status (99.999%)</a></li>
+            <li><a href="#">Whitepapers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Zelophaze</a></li>
+            <li><a href="#">24/7 Global SOC</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press & News</a></li>
+            <li><a href="#" class="open-demo-modal">Contact Security Team</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Zelophaze Inc. All rights reserved. Enterprise B2B Security.</div>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" style="color: #64748b; text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: #64748b; text-decoration: none;">Terms of Service</a>
+          <a href="#" style="color: #64748b; text-decoration: none;">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enterprise Demo Modal -->
+  <div id="demo-modal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="close-modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 22px;">
+        <h3 style="font-size: 1.6rem; color: #0f172a;">Experience Zelophaze Live</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Connect with our 24/7 AI SOC analysts for a custom architectural assessment.</p>
+      </div>
+
+      <form id="demo-form">
+        <div class="form-group">
+          <label>Work Email Address *</label>
+          <input type="email" class="form-input" placeholder="ciso@enterprise.com" required />
+        </div>
+        <div class="form-group">
+          <label>Organization Name *</label>
+          <input type="text" class="form-input" placeholder="Enterprise Inc." required />
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label>Cloud Infrastructure</label>
+            <select class="form-input">
+              <option>AWS / Amazon Cloud</option>
+              <option>Google Cloud Platform</option>
+              <option>Microsoft Azure</option>
+              <option>Kubernetes / Hybrid</option>
+              <option>On-Premises Air-Gapped</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Monthly Traffic</label>
+            <select class="form-input">
+              <option>&lt; 50 Million Requests</option>
+              <option>50M - 500 Million</option>
+              <option>500M - 5 Billion</option>
+              <option>5+ Billion / Month</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Primary Security Focus</label>
+          <input type="text" class="form-input" placeholder="e.g. API Protection or Layer-7 DDoS Mitigation" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 14px; margin-top: 10px;">
+          Launch Evaluation <i data-lucide="arrow-up-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

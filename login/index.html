@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in - Zelophaze™ | The New Phase of Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-hover: #1e40af;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --border-color: #cbd5e1;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: #f1f5f9;
+      overflow-x: hidden;
+      padding: 30px 20px;
+    }
+
+    /* Architectural Geometric Background Swooshes */
+    .bg-shape {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .shape-1 {
+      top: 0;
+      left: 0;
+      width: 65vw;
+      height: 75vh;
+      background: linear-gradient(135deg, #cbd5e1 0%, #e2e8f0 100%);
+      clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 85%);
+      opacity: 0.6;
+    }
+
+    .shape-2 {
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 60vh;
+      background: linear-gradient(225deg, #94a3b8 0%, #cbd5e1 100%);
+      border-bottom-left-radius: 500px;
+      opacity: 0.55;
+    }
+
+    .shape-3 {
+      bottom: 0;
+      right: 0;
+      width: 45vw;
+      height: 35vh;
+      background: #ffffff;
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+      opacity: 0.7;
+    }
+
+    /* Back to Home Link */
+    .back-home {
+      position: absolute;
+      top: 28px;
+      left: 32px;
+      z-index: 10;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 8px 16px;
+      border-radius: 30px;
+      border: 1px solid #e2e8f0;
+      backdrop-filter: blur(8px);
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .back-home:hover {
+      background: #ffffff;
+      color: var(--primary);
+      transform: translateX(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Container */
+    .signin-wrapper {
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Brand Logo & Header */
+    .brand-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      filter: drop-shadow(0 4px 8px rgba(37, 99, 235, 0.2));
+    }
+
+    .brand-title {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #0284c7;
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .brand-title span.tm {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #0f172a;
+      border: 1.5px solid #0f172a;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 3px;
+      margin-top: 4px;
+    }
+
+    .brand-tagline {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    /* Sign-in Card */
+    .signin-card {
+      width: 100%;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 40px 36px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07), 0 1px 3px rgba(15, 23, 42, 0.04);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+
+    .card-title {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .card-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .card-subtitle a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .card-subtitle a:hover {
+      text-decoration: underline;
+    }
+
+    /* Form Fields */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+
+    label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .forgot-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .forgot-link:hover {
+      text-decoration: underline;
+    }
+
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      background: #ffffff;
+      transition: all 0.2s ease;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+    }
+
+    input::placeholder {
+      color: #94a3b8;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 14px;
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      transition: color 0.2s;
+    }
+
+    .toggle-password:hover {
+      color: #475569;
+    }
+
+    /* Submit Button */
+    .signin-btn {
+      width: 100%;
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 13px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-top: 6px;
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.22);
+    }
+
+    .signin-btn:hover {
+      background: var(--primary-hover);
+      box-shadow: 0 6px 16px rgba(29, 78, 216, 0.32);
+      transform: translateY(-1px);
+    }
+
+    .signin-btn:active {
+      transform: translateY(0);
+    }
+
+    /* Footer Banner */
+    .gartner-footer {
+      margin-top: 36px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #475569;
+      text-align: center;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    @media (max-width: 500px) {
+      .signin-card {
+        padding: 30px 22px;
+      }
+      .back-home {
+        top: 16px;
+        left: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Swoosh Shapes matching user image -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
+
+  <!-- Back to Home -->
+  <a href="../index.html" class="back-home">
+    <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i> Back to Home
+  </a>
+
+  <!-- Main Wrapper -->
+  <div class="signin-wrapper">
+    <!-- Brand Logo Section -->
+    <div class="brand-header">
+      <div class="logo-row">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+          <path d="M50 8 L86 22 V50 C86 74 50 92 50 92 C50 92 14 74 14 50 V22 L50 8Z" stroke="#2563eb" stroke-width="6" fill="#eff6ff" />
+          <path d="M34 36 H66 L38 64 H66" stroke="#0284c7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="66" cy="36" r="3.5" fill="#2563eb" />
+          <circle cx="38" cy="64" r="3.5" fill="#0284c7" />
+        </svg>
+        <div class="brand-title">Zelophaze<span class="tm">TM</span></div>
+      </div>
+      <div class="brand-tagline">The New Phase of Security</div>
+    </div>
+
+    <!-- Card -->
+    <div class="signin-card">
+      <h1 class="card-title">Sign in</h1>
+      <p class="card-subtitle">Don't have an account yet? <a href="#">Sign up here</a></p>
+
+      <form id="signinForm" onsubmit="event.preventDefault(); alert('Redirecting to Zelophaze Secure Dashboard...'); window.location.href='../index.html';">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="input-wrapper">
+            <input type="email" id="email" placeholder="yourname@yourcompany.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label-row">
+            <label for="password">Password</label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" id="password" placeholder="password" required>
+            <button type="button" class="toggle-password" id="togglePasswordBtn" aria-label="Toggle password visibility">
+              <i data-lucide="eye-off" id="eyeIcon" style="width: 18px; height: 18px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="signin-btn">Sign in</button>
+      </form>
+    </div>
+
+    <!-- Gartner Footer -->
+    <div class="gartner-footer">
+      RECOGNIZED AS A REPRESENTATIVE VENDOR IN THE 2024 GARTNER® MARKET GUIDE FOR API PROTECTION
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const passwordInput = document.getElementById('password');
+    const toggleBtn = document.getElementById('togglePasswordBtn');
+    const eyeIcon = document.getElementById('eyeIcon');
+
+    toggleBtn.addEventListener('click', () => {
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+      
+      // Update Lucide Icon
+      if (type === 'text') {
+        eyeIcon.setAttribute('data-lucide', 'eye');
+      } else {
+        eyeIcon.setAttribute('data-lucide', 'eye-off');
+      }
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

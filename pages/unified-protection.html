@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unified Web, API, Bot & DDoS Protection | Zelophaze Architecture</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="page-bg-canvas" class="background-canvas"></canvas>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/index.html" class="brand">
+        <div class="logo-icon">
+          <!-- Sleek Professional Corporate Cyber Shield Logo -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 8 L86 22 V50 C86 74 50 92 50 92 C50 92 14 74 14 50 V22 L50 8Z" stroke="#2563eb" stroke-width="6" fill="#eff6ff" />
+            <path d="M34 36 H66 L38 64 H66" stroke="#0284c7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="66" cy="36" r="3.5" fill="#2563eb" />
+            <circle cx="38" cy="64" r="3.5" fill="#0284c7" />
+          </svg>
+        </div>
+        <div>
+          <span class="brand-name">Zelophaze</span>
+        </div>
+      </a>
+
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <a href="/index.html" class="back-btn" style="text-decoration: none;">
+          <i data-lucide="arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container detail-hero">
+    <span class="hero-tag"><i data-lucide="shield-check"></i> SINGLE-PASS CONVERGED SECURITY PLATFORM</span>
+    <h1 class="detail-title">Unified Web, API, Bot & DDoS Protection</h1>
+    <p class="hero-desc" style="max-width: 760px; margin: 0 auto;">
+      Eliminate latency overhead and fragmented security policies by converging Layer-7 WAF, API Schema Enforcement, Behavioral Bot Mitigation, and Terabit DDoS Scrubbing into a single sub-millisecond inspection pipeline.
+    </p>
+
+    <!-- Why It Is Necessary Section -->
+    <div class="necessity-box">
+      <h3><i data-lucide="alert-triangle" style="color: #d97706;"></i> Why It Is Necessary: The Problem with Siloed Security</h3>
+      <p>
+        Traditional enterprise architectures deploy separate appliances or vendors for WAF, API Gateway Security, Bot Management, and DDoS mitigation. Passing HTTP requests sequentially through multiple disparate proxies introduces <strong>50ms+ of additive network latency</strong>, breaks SSL termination chains, and creates security gaps where attacks evade detection between overlapping policy boundaries. Furthermore, managing disjointed rulesets leads to alert fatigue and delayed incident remediation during critical outages.
+      </p>
+    </div>
+
+    <!-- Architectural Functions Grid -->
+    <div style="text-align: left;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Core Architectural Functions</h2>
+      <p style="color: #64748b; margin-bottom: 24px;">How Zelophaze executes multi-vector defense in single-pass RAM execution.</p>
+      
+      <div class="func-grid">
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="zap"></i></div>
+          <h4>Single-Pass Inspection Engine</h4>
+          <p>Instead of daisy-chaining proxies, Zelophaze compiles WAF rules, API schemas, and IP reputations into a unified memory state machine. Every incoming payload is evaluated simultaneously in under 0.4ms.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Zero inter-proxy latency penalty</li>
+            <li><i data-lucide="check-circle-2"></i> Compiled eBPF / Rust memory execution</li>
+            <li><i data-lucide="check-circle-2"></i> Unified logging & tracing context</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="file-text"></i></div>
+          <h4>Deep API Schema Enforcement</h4>
+          <p>Automated ingestion of OpenAPI, Swagger, and GraphQL schemas. Automatically blocks malformed JSON/XML parameters, excessive data exposure (BOLA/IDOR), and deep nested query recursion attacks.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Positive security model locking</li>
+            <li><i data-lucide="check-circle-2"></i> Real-time schema drift detection</li>
+            <li><i data-lucide="check-circle-2"></i> Rate limiting per API endpoint JWT</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="eye"></i></div>
+          <h4>Behavioral Bot Mitigation</h4>
+          <p>Distinguishes legitimate human users from advanced scraper bots and credential stuffing scripts using client-side biometric heuristics, TLS fingerprinting (JA3/JA4), and dynamic cryptographic challenges.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Zero user-friction invisible CAPTCHA</li>
+            <li><i data-lucide="check-circle-2"></i> Anti-scraping & inventory protection</li>
+            <li><i data-lucide="check-circle-2"></i> ML-driven automated challenge rotation</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="shield"></i></div>
+          <h4>Autonomous Layer-7 DDoS Defense</h4>
+          <p>Absorbs massive volumetric HTTP flood attacks at the edge Anycast network before they saturate origin infrastructure. Adaptive thresholds learn baseline traffic per geo-region in real time.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Instant global SYN flood scrubbing</li>
+            <li><i data-lucide="check-circle-2"></i> Automatic rate-limiting on spike anomalies</li>
+            <li><i data-lucide="check-circle-2"></i> 99.999% uptime Anycast SLA guarantee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Box -->
+    <div style="margin: 70px auto 40px; padding: 40px; background: #0f172a; border-radius: 20px; color: #ffffff; text-align: center;">
+      <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 12px;">Ready to Deploy Unified Protection?</h3>
+      <p style="color: #94a3b8; max-width: 600px; margin: 0 auto 24px;">Experience zero-latency single-pass security in your production or staging environment today.</p>
+      <a href="/index.html#simulator" class="btn btn-primary" style="padding: 14px 32px; font-size: 1rem;">Launch Live Simulator</a>
+    </div>
+  </main>
+
+  <script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI/ML - Anomaly Detection | Zelophaze Architecture</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="page-bg-canvas" class="background-canvas"></canvas>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/index.html" class="brand">
+        <div class="logo-icon">
+          <!-- Sleek Professional Corporate Cyber Shield Logo -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 8 L86 22 V50 C86 74 50 92 50 92 C50 92 14 74 14 50 V22 L50 8Z" stroke="#2563eb" stroke-width="6" fill="#eff6ff" />
+            <path d="M34 36 H66 L38 64 H66" stroke="#0284c7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="66" cy="36" r="3.5" fill="#2563eb" />
+            <circle cx="38" cy="64" r="3.5" fill="#0284c7" />
+          </svg>
+        </div>
+        <div>
+          <span class="brand-name">Zelophaze</span>
+        </div>
+      </a>
+
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <a href="/index.html" class="back-btn" style="text-decoration: none;">
+          <i data-lucide="arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container detail-hero">
+    <span class="hero-tag"><i data-lucide="activity"></i> DEEP LEARNING THREAT RECOGNITION</span>
+    <h1 class="detail-title">AI/ML - Anomaly Detection</h1>
+    <p class="hero-desc" style="max-width: 760px; margin: 0 auto;">
+      Move beyond static regular expressions. Zelophaze leverages neural sequence models and unsupervised graph clustering to neutralize Zero-Day vulnerabilities and polymorphic exploits before CVEs are published.
+    </p>
+
+    <!-- Why It Is Necessary Section -->
+    <div class="necessity-box">
+      <h3><i data-lucide="alert-triangle" style="color: #d97706;"></i> Why It Is Necessary: The Failure of Static Signatures</h3>
+      <p>
+        Legacy WAFs rely entirely on static regular expressions (regex) to identify known attack patterns (e.g., SQL syntax keywords). Attackers easily bypass regex engines by encoding characters, splitting queries, or exploiting unpatched Zero-Day vulnerabilities (like Log4Shell). Furthermore, complex business logic abuse—such as gift card enumeration or account scraping—looks syntactically valid and never triggers regex signatures. Defending modern applications requires autonomous models that understand intent rather than strings.
+      </p>
+    </div>
+
+    <!-- Architectural Functions Grid -->
+    <div style="text-align: left;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Core Architectural Functions</h2>
+      <p style="color: #64748b; margin-bottom: 24px;">How neural networks inspect live HTTP streams without latency penalty.</p>
+      
+      <div class="func-grid">
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="activity"></i></div>
+          <h4>Deep Neural Sequence Models</h4>
+          <p>Treats HTTP requests, JSON payloads, and URI paths as sequential language structures. Transformer-based models evaluate character token probabilities in real time to spot obfuscated shellcode.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Instant Zero-Day exploit interception</li>
+            <li><i data-lucide="check-circle-2"></i> Immune to encoding & mutation tricks</li>
+            <li><i data-lucide="check-circle-2"></i> Sub-millisecond tensor execution</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="bar-chart-3"></i></div>
+          <h4>Unsupervised Behavioral Baselining</h4>
+          <p>During learning mode, AI engines observe normal application traffic flows per API route. It establishes multi-dimensional statistical profiles of acceptable parameter lengths, data types, and sequences.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Automatic positive security profiling</li>
+            <li><i data-lucide="check-circle-2"></i> Zero manual tuning required</li>
+            <li><i data-lucide="check-circle-2"></i> Adapts to application deployments</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="eye"></i></div>
+          <h4>Business Logic Abuse Recognition</h4>
+          <p>Detects anomalous sequence velocity across multiple accounts or IP pools. Identifies low-and-slow data scraping, credential testing, and automated checkout manipulation.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Stops automated coupon & inventory hoarding</li>
+            <li><i data-lucide="check-circle-2"></i> Identifies distributed low-rate botnets</li>
+            <li><i data-lucide="check-circle-2"></i> Real-time session graph tracking</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="check-circle-2"></i></div>
+          <h4>Zero False-Positive Confidence Scoring</h4>
+          <p>Every inspected request receives a continuous anomaly score from 0 to 100. Rather than binary blocking, ambiguous requests undergo transparent challenge verification without user disruption.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Eliminates false-positive customer blocking</li>
+            <li><i data-lucide="check-circle-2"></i> Multi-tier confidence thresholding</li>
+            <li><i data-lucide="check-circle-2"></i> Transparent telemetry explainability</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Box -->
+    <div style="margin: 70px auto 40px; padding: 40px; background: #0f172a; border-radius: 20px; color: #ffffff; text-align: center;">
+      <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 12px;">See AI Anomaly Detection in Action</h3>
+      <p style="color: #94a3b8; max-width: 600px; margin: 0 auto 24px;">Test live SQL injection, XSS, and RCE payload mutations in our simulator.</p>
+      <a href="/index.html#simulator" class="btn btn-primary" style="padding: 14px 32px; font-size: 1rem;">Run Live Simulator</a>
+    </div>
+  </main>
+
+  <script type="module" src="/src/page.js"></script>
+</body>
+</html>

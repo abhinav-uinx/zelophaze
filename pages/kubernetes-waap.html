@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kubernetes-Native WAAP | Zelophaze Architecture</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="page-bg-canvas" class="background-canvas"></canvas>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/index.html" class="brand">
+        <div class="logo-icon">
+          <!-- Sleek Professional Corporate Cyber Shield Logo -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 8 L86 22 V50 C86 74 50 92 50 92 C50 92 14 74 14 50 V22 L50 8Z" stroke="#2563eb" stroke-width="6" fill="#eff6ff" />
+            <path d="M34 36 H66 L38 64 H66" stroke="#0284c7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="66" cy="36" r="3.5" fill="#2563eb" />
+            <circle cx="38" cy="64" r="3.5" fill="#0284c7" />
+          </svg>
+        </div>
+        <div>
+          <span class="brand-name">Zelophaze</span>
+        </div>
+      </a>
+
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <a href="/index.html" class="back-btn" style="text-decoration: none;">
+          <i data-lucide="arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container detail-hero">
+    <span class="hero-tag"><i data-lucide="box"></i> CLUSTER-NATIVE MICROSERVICE DEFENSE</span>
+    <h1 class="detail-title">Kubernetes-Native WAAP</h1>
+    <p class="hero-desc" style="max-width: 760px; margin: 0 auto;">
+      Secure your containerized microservices from inside the cluster. Embedded eBPF sidecars and native Envoy ingress integration inspect both North-South and East-West traffic with zero architectural modification.
+    </p>
+
+    <!-- Why It Is Necessary Section -->
+    <div class="necessity-box">
+      <h3><i data-lucide="alert-triangle" style="color: #d97706;"></i> Why It Is Necessary: The East-West Blind Spot</h3>
+      <p>
+        Traditional edge WAFs only inspect ingress traffic (North-South) entering from the internet. Once an attacker bypasses the perimeter via a compromised dependency or SSRF vulnerability, they have unrestricted lateral access (East-West) across unencrypted Kubernetes pods. Furthermore, legacy security appliances break GitOps CI/CD pipelines because external security teams must manually approve routing changes. A cloud-native WAAP must live natively inside the cluster orchestration fabric.
+      </p>
+    </div>
+
+    <!-- Architectural Functions Grid -->
+    <div style="text-align: left;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Core Architectural Functions</h2>
+      <p style="color: #64748b; margin-bottom: 24px;">How Zelophaze integrates directly into modern container orchestrators.</p>
+      
+      <div class="func-grid">
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="cpu"></i></div>
+          <h4>eBPF & Envoy Sidecar Acceleration</h4>
+          <p>Operates at kernel level using eBPF hooks and native Envoy filter plugins. Inspects RPCs, gRPC, and REST calls directly inside the Linux kernel memory space without proxy overhead.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Sub-millisecond pod-to-pod inspection</li>
+            <li><i data-lucide="check-circle-2"></i> Zero application code modification</li>
+            <li><i data-lucide="check-circle-2"></i> Ultra-low memory & CPU footprint</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="layers"></i></div>
+          <h4>GitOps Declarative CRDs</h4>
+          <p>Security rules are defined as Kubernetes Custom Resource Definitions (CRDs). Developers commit security policies alongside application manifests in Git repositories for automated enforcement.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> 100% Infrastructure-as-Code compatibility</li>
+            <li><i data-lucide="check-circle-2"></i> Automated versioning & rollback via ArgoCD</li>
+            <li><i data-lucide="check-circle-2"></i> Per-namespace tenant isolation</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="refresh-cw"></i></div>
+          <h4>Auto-Scaling Dynamic Pod Defense</h4>
+          <p>As Kubernetes Horizontal Pod Autoscalers (HPA) spin up thousands of new pod replicas during traffic spikes, Zelophaze security nodes instantly attach and inherit active defense policies within milliseconds.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Instantaneous replica security synchronization</li>
+            <li><i data-lucide="check-circle-2"></i> Dynamic IP pool discovery</li>
+            <li><i data-lucide="check-circle-2"></i> Automated mutual TLS (mTLS) verification</li>
+          </ul>
+        </div>
+
+        <div class="func-card">
+          <div class="func-icon"><i data-lucide="terminal"></i></div>
+          <h4>Lateral SSRF & Exploit Containment</h4>
+          <p>Continuously maps runtime service dependencies. If a web pod attempts unauthorized communication with an internal database or metadata API (AWS IMDSv2), the connection is instantly severed.</p>
+          <ul class="func-list">
+            <li><i data-lucide="check-circle-2"></i> Zero-trust service mesh boundary</li>
+            <li><i data-lucide="check-circle-2"></i> Real-time anomaly containment</li>
+            <li><i data-lucide="check-circle-2"></i> Automated forensic container snapshot</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Box -->
+    <div style="margin: 70px auto 40px; padding: 40px; background: #0f172a; border-radius: 20px; color: #ffffff; text-align: center;">
+      <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 12px;">Deploy Helm Chart in Under 5 Minutes</h3>
+      <p style="color: #94a3b8; max-width: 600px; margin: 0 auto 24px;">Integrate with EKS, GKE, AKS, or OpenShift via our certified Helm repository.</p>
+      <a href="/index.html#simulator" class="btn btn-primary" style="padding: 14px 32px; font-size: 1rem;">Test Attack Interception</a>
+    </div>
+  </main>
+
+  <script type="module" src="/src/page.js"></script>
+</body>
+</html>
